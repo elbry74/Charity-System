@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CompareEmpNoVSAge" xml:space="preserve">
+    <value>Compare EmpNo VS Age</value>
+  </data>
+  <data name="CompareEmpNoVSDepart" xml:space="preserve">
+    <value>Compare EmpNo VS Department</value>
+  </data>
+  <data name="CompareEmpNoVSGendeer" xml:space="preserve">
+    <value>Compare EmpNo VS Gender</value>
+  </data>
+  <data name="CompareEmpNoVSGrade" xml:space="preserve">
+    <value>Compare EmpNo VS Grade</value>
+  </data>
+  <data name="CompareEmpNoVSJobDesc" xml:space="preserve">
+    <value>Compare EmpNo VS Job_Desc</value>
+  </data>
+  <data name="Comparisons" xml:space="preserve">
+    <value>Comparisons</value>
+  </data>
+  <data name="dept_number_desc" xml:space="preserve">
+    <value>dept_number_desc</value>
+  </data>
+  <data name="DocumentsAlert" xml:space="preserve">
+    <value>Documents Alert</value>
+  </data>
+  <data name="doc_desc" xml:space="preserve">
+    <value>doc_desc</value>
+  </data>
+  <data name="doc_Number" xml:space="preserve">
+    <value>doc_Number</value>
+  </data>
+  <data name="EmployeesinTestPeriod" xml:space="preserve">
+    <value>Emp. in Test Period</value>
+  </data>
+  <data name="EmpNO" xml:space="preserve">
+    <value>Emp NO</value>
+  </data>
+  <data name="End_Date" xml:space="preserve">
+    <value>End_Date</value>
+  </data>
+  <data name="end_Test" xml:space="preserve">
+    <value>End Test</value>
+  </data>
+  <data name="ExpiryDate" xml:space="preserve">
+    <value>Expiry Date</value>
+  </data>
+  <data name="hire_date" xml:space="preserve">
+    <value>hire_date</value>
+  </data>
+  <data name="Issue_Date" xml:space="preserve">
+    <value>Issue_Date</value>
+  </data>
+  <data name="job_title_desc" xml:space="preserve">
+    <value>job_title_desc</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="nationality_desc" xml:space="preserve">
+    <value>Nationality</value>
+  </data>
+  <data name="Nodata" xml:space="preserve">
+    <value>No Data</value>
+  </data>
+  <data name="Notice_period" xml:space="preserve">
+    <value>Notice Period</value>
+  </data>
+  <data name="Notice_period_Date" xml:space="preserve">
+    <value>Notice Period Date</value>
+  </data>
+  <data name="NumberofEmployees" xml:space="preserve">
+    <value>Number of Employees</value>
+  </data>
+  <data name="Remaning_Days" xml:space="preserve">
+    <value>Remaning_Days</value>
+  </data>
+  <data name="Staffinwarningperiod" xml:space="preserve">
+    <value>Staff in warning period</value>
+  </data>
+  <data name="test_period" xml:space="preserve">
+    <value>Test Period</value>
+  </data>
+  <data name="ActionsUnder" xml:space="preserve">
+    <value>Procedures in progress</value>
+  </data>
+  <data name="ActionsUp" xml:space="preserve">
+    <value>Premiums during the year</value>
+  </data>
+  <data name="ActionsUp1" xml:space="preserve">
+    <value>Procedures upgrade during the year</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="BankName" xml:space="preserve">
+    <value>Bank</value>
+  </data>
+  <data name="bar1" xml:space="preserve">
+    <value>Total salaries by months</value>
+  </data>
+  <data name="bar2" xml:space="preserve">
+    <value>Number of Employees by Employee Banks</value>
+  </data>
+  <data name="bar3" xml:space="preserve">
+    <value>Total Salary by Single Salary for a Specific Month</value>
+  </data>
+  <data name="bar4" xml:space="preserve">
+    <value>Salary by administration</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>Count</value>
+  </data>
+  <data name="currentMonth" xml:space="preserve">
+    <value>Current Payroll Month</value>
+  </data>
+  <data name="Details1" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="duration" xml:space="preserve">
+    <value>Duration</value>
+  </data>
+  <data name="EmpID" xml:space="preserve">
+    <value>Emp No.</value>
+  </data>
+  <data name="EmpsInVacation" xml:space="preserve">
+    <value>Emp. In Vacation</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>End Date</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="Fire" xml:space="preserve">
+    <value>Termination of services during the year</value>
+  </data>
+  <data name="Hire" xml:space="preserve">
+    <value>Hire During The Year</value>
+  </data>
+  <data name="InJob" xml:space="preserve">
+    <value>Emp. on official assignments</value>
+  </data>
+  <data name="leave_type_desc" xml:space="preserve">
+    <value>kind of holiday</value>
+  </data>
+  <data name="new_information_desc" xml:space="preserve">
+    <value>New Information</value>
+  </data>
+  <data name="old_information_desc" xml:space="preserve">
+    <value>Old Information</value>
+  </data>
+  <data name="PaidVacation" xml:space="preserve">
+    <value>Emp. In Unpaid Holiday</value>
+  </data>
+  <data name="pa_sequent_number" xml:space="preserve">
+    <value>sequent number</value>
+  </data>
+  <data name="return_date" xml:space="preserve">
+    <value>return date</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="SystemError" xml:space="preserve">
+    <value>System Error</value>
+  </data>
+  <data name="Totalmoney" xml:space="preserve">
+    <value>Total salaries for the current month</value>
+  </data>
+  <data name="total_period" xml:space="preserve">
+    <value>total period</value>
+  </data>
+  <data name="transaction_code_desc" xml:space="preserve">
+    <value>transaction Type</value>
+  </data>
+  <data name="transaction_date" xml:space="preserve">
+    <value>transaction date</value>
+  </data>
+  <data name="travel_date" xml:space="preserve">
+    <value>travel date</value>
+  </data>
+  <data name="trip_title" xml:space="preserve">
+    <value>trip title</value>
+  </data>
+  <data name="YearlyVacation" xml:space="preserve">
+    <value>Emp. In Yearly Holiday</value>
+  </data>
+  <data name="bar99" xml:space="preserve">
+    <value>Comparison of employees according to the total duration of leave during the</value>
+  </data>
+  <data name="bar99_t" xml:space="preserve">
+    <value>Number of employees by evaluation results</value>
+  </data>
+  <data name="Sum_Duration" xml:space="preserve">
+    <value>Sum Of Duration</value>
+  </data>
+  <data name="AccoumentadionAlerts" xml:space="preserve">
+    <value>Residence Alerts</value>
+  </data>
+  <data name="applicant_name" xml:space="preserve">
+    <value>Applicant Name</value>
+  </data>
+  <data name="application_number" xml:space="preserve">
+    <value>Application Number</value>
+  </data>
+  <data name="application_status_Desc" xml:space="preserve">
+    <value>Application Status Desc</value>
+  </data>
+  <data name="applic_fill_date" xml:space="preserve">
+    <value>Fill Date</value>
+  </data>
+  <data name="CompanyFilesCount" xml:space="preserve">
+    <value>Number of company documents</value>
+  </data>
+  <data name="Compareapplicantsbyjob" xml:space="preserve">
+    <value>Compare applicants by job</value>
+  </data>
+  <data name="CompareapplicantsbyOrder" xml:space="preserve">
+    <value>Compare applicants by Order</value>
+  </data>
+  <data name="CompareFilesNoVSfiletype" xml:space="preserve">
+    <value>Compare the Number of Documents by Document Type</value>
+  </data>
+  <data name="Comparisonapplicantsnationality" xml:space="preserve">
+    <value>Comparison of applicants by nationality</value>
+  </data>
+  <data name="Comparisonapplicantssex" xml:space="preserve">
+    <value>Comparison of applicants by sex</value>
+  </data>
+  <data name="contract_number" xml:space="preserve">
+    <value>Contract number</value>
+  </data>
+  <data name="EmployeesAlretPassport" xml:space="preserve">
+    <value>Passport Alerts</value>
+  </data>
+  <data name="EmpNO2" xml:space="preserve">
+    <value>Emp Number</value>
+  </data>
+  <data name="EmpolyeeFilesCount" xml:space="preserve">
+    <value>Number of staff documents</value>
+  </data>
+  <data name="expiry_date" xml:space="preserve">
+    <value>Expiry Date</value>
+  </data>
+  <data name="start_date" xml:space="preserve">
+    <value>Start date</value>
+  </data>
+  <data name="TotalNoapplicants" xml:space="preserve">
+    <value>Total  applicants</value>
+  </data>
+  <data name="TotalNOapplicationsforce" xml:space="preserve">
+    <value>Total  Applications in Valid</value>
+  </data>
+  <data name="Totalnumberofcontracts" xml:space="preserve">
+    <value>Total No of Contracts</value>
+  </data>
+</root>

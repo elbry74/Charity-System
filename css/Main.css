@@ -1,0 +1,406 @@
+﻿@import url('https://fonts.googleapis.com/css?family=El+Messiri');
+
+body {
+    font-size: 12pt;
+    height: 100%
+}
+
+.carousel-indicators .active {
+    border: 4px solid #ccc
+}
+
+.skin-blue .main-header .navbar {
+    background-color: #ffffff;
+}
+
+.main-header .logo .logo-lg img {
+    max-width: 230px;
+    max-height: 45px;
+}
+
+.skin-blue .main-header .logo:hover {
+    background-color: #2c3a40;
+}
+
+.skin-blue .main-header .logo {
+    background-color: #222d32;
+}
+
+.btn-default {
+    background-color: #585757;
+    color: #fff;
+}
+
+.skin-blue .main-header .navbar .sidebar-toggle {
+    color: #585757;
+}
+
+    .skin-blue .main-header .navbar .sidebar-toggle:hover {
+        background-color: #2c3a40;
+    }
+
+#user-left-box {
+    padding: 20px 15px 20px 25px;
+}
+
+    #user-left-box img {
+        border-radius: 18%;
+        background-clip: padding-box;
+        border: 3px solid #fff;
+        float: left;
+        width: 70px;
+    }
+
+.user-panel > .image > img {
+    max-width: 70px;
+}
+
+.user-panel {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+    .user-panel > .info {
+        position: unset;
+        padding-top: 15px;
+    }
+
+.skin-blue .sidebar-menu > li.active > a {
+    border-left-color: #dbe0e3;
+}
+
+.skin-blue .main-header .navbar .nav > li > a {
+    color: black;
+}
+
+.navbar-nav .open .dropdown-menu {
+    background-color: #FFFFFF;
+    border: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+    position: absolute;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    border-radius: 3px;
+    background-clip: padding-box;
+}
+
+.open > .dropdown-menu {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-menu {
+    opacity: 0;
+    transform-origin: top;
+    animation-fill-mode: forwards;
+    transform: scale(1, 0);
+    transition: all 0.14s linear;
+    display: block;
+    visibility: hidden;
+}
+
+.skin-blue .main-header .navbar .nav > li > a:hover,
+.skin-blue .main-header .navbar .nav > li > a:active,
+.skin-blue .main-header .navbar .nav > li > a:focus,
+.skin-blue .main-header .navbar .nav .open > a,
+.skin-blue .main-header .navbar .nav .open > a:hover,
+.skin-blue .main-header .navbar .nav .open > a:focus,
+.skin-blue .main-header .navbar .nav > .active > a:focus {
+    background-color: white;
+    color: black;
+}
+
+.skin-blue .main-header .navbar .nav > li > a:hover {
+    background-color: #2c3a40;
+    color: white;
+    transition-duration: 0.5s;
+    transition-property: background-color;
+}
+
+.skin-blue .main-header .navbar .nav > li > a:active, .skin-blue .main-header .navbar .nav .open > a:focus {
+    background-color: #2c3a40;
+    color: white;
+    transition-duration: 0.8s;
+    transition-property: background-color;
+}
+
+.sidebar-menu li > a > .fa-angle-left, .sidebar-menu li > a > .pull-right-container > .fa-angle-left {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin-right: 10px;
+    -webkit-transition: transform .5s ease;
+    -o-transition: transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.box-header {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.18)
+}
+
+div.dataTables_wrapper div.dataTables_filter label {
+    width: 75%;
+}
+
+    div.dataTables_wrapper div.dataTables_filter label input {
+        width: 80%
+    }
+
+div[data-act-control-type="modalPopupBackground"] {
+    background-color: rgba(0, 0, 0, 0.60)
+}
+
+.modal-header {
+    background-color: #929292;
+    color: #ffffff;
+}
+
+    .modal-header p {
+        font-size: 14pt;
+    }
+
+    .modal-header .close {
+        color: white;
+        opacity: 0.5;
+        margin-top: -5px;
+        font-size: 16pt;
+        padding: 5px;
+    }
+
+        .modal-header .close:hover {
+            opacity: 1;
+            background-color: #ccc;
+            border-radius: 10%
+        }
+
+.modal-content {
+    border-radius: 0
+}
+
+.modal-footer {
+    text-align: center;
+}
+
+.bootstrap-select.btn-group .dropdown-toggle .filter-option {
+    text-align: center;
+}
+
+.sweet-overlay {
+    z-index: 9999999999
+}
+
+.sweet-alert {
+    z-index: 999999999999
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: #2e2e2f;
+    border-color: #2e2e2f;
+}
+
+.nav-tabs-custom > .nav-tabs {
+    background-color: #eaeaea;
+}
+/*.tab-content { mohamed zakaria 5-11-2017
+
+    background-color: #ecf0f5 !important;
+}*/
+/*.tab-content > .active {mohamed zakaria 5-11-2017
+        background-color: #ecf0f5;
+    }*/
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+    border: 1px solid #9f9f9f
+}
+
+.RDsapcing label {
+    margin-right: 10px
+}
+
+h3 {
+    border-bottom: none;
+}
+
+.box.box-solid {
+    background-color: white;
+}
+
+.subbox {
+    border: 1px solid #bebebe;
+}
+
+    .subbox .with-border {
+        border-top: 4px solid #686868
+    }
+
+.box-footer {
+    border-top: 1px solid #686868;
+}
+
+.box-body { /*mohamed zakaria 5-11-2017*/
+    background-color: white;
+}
+
+#sidebar-nav .nav > li.nav-header {
+    font-size: 14pt;
+    text-align: center;
+}
+
+.bootstrap-select.btn-group .dropdown-menu {
+    border: 1px solid #a8a8a8;
+}
+
+.box-body {
+    padding: 10px !important;
+}
+
+#BodyContent_UpdatePanel1 input {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 13px !important;
+    /*font-weight: bold*/
+}
+
+#BodyContent_GridView1_filter label, #BodyContent_GridView1_length label {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 20px !important;
+}
+
+#BodyContent_UpdatePanel1 input, #BodyContent_GridView1_filter labe
+.sorting, .clearfix, div, .sorting_asc, .odd, .even, .odd input, .even input, #BodyContent_GridView1_info, .box-title, .navbar-nav li, #BodyContent_UpdatePanel1, .nav-tabs li, #MainEmpData, #ChildTickets, .box-body, #BodyContent_Panel2, .modal-title, #BodyContent_Button1, .modal-body, .close {
+    font-family: 'El Messiri', sans-serif !important;
+    font-size: 15px !important;
+    /*font-weight: bold*/
+}
+
+#BodyContent_GridView1_filter {
+    margin-right: 67px;
+}
+
+.btn-main {
+    font-family: 'El Messiri', sans-serif;
+    /*font-weight: bold;*/
+    font-size: 15px !important;
+}
+
+/*.btn-Edit {
+    background-color: #ddd;
+    color: #000;
+    border-radius: unset;
+}*/
+
+td .btn-Edit {
+    padding: 2px 8px;
+    /*font-weight: 600;
+    font-size: 11pt !important;*/
+}
+
+/*.btn-Edit:hover {
+    font-family: 'El Messiri', sans-serif;
+    /*font-size: 15px !important;*/
+/*font-weight: bold;*/
+/*color: #000 !important;
+background-color: #ccc
+}*/
+
+.nav-stacked li {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 14px !important;
+}
+
+.dataTables_scrollHeadInner, .FullWidth, .MainEmpTable {
+    width: 100% !important
+}
+
+#BodyContent_Panel2 {
+    position: fixed !important;
+    top: 0 !important;
+}
+
+.modal-body {
+    max-height: calc(100vh - 212px);
+    overflow-y: auto !important;
+    overflow-x: hidden
+}
+
+.modal-content {
+    border-top: 4px solid #fff;
+    border-left: 4px solid #fff;
+    border-right: 4px solid #585757;
+    border-bottom: 4px solid #585757;
+    height: auto
+}
+
+.box-header {
+    text-align: center;
+    border-top: 2px solid #585757;
+    /*background-color: #ccc;*/
+}
+
+    .box-header > .box-title {
+        font-size: 20px !important
+    }
+
+#sidebar-nav .nav > .open .submenu > li > .submenu a:before, #sidebar-nav .nav > .active .submenu > li > .submenu a:before {
+    margin-left: -10px !important;
+    margin-right: -10px !important;
+}
+
+.box-title {
+    display: block;
+}
+
+.box-header span {
+    text-align: center;
+    margin: 10px
+}
+
+.theme-white a, .theme-white .fc-state-default, .theme-white .jvectormap-zoomin, .theme-white .jvectormap-zoomout, .theme-white #user-profile .profile-details ul > li > span {
+    color: #000000;
+}
+
+    .theme-white a:hover, .theme-white .fc-state-default, .theme-white .jvectormap-zoomin, .theme-white .jvectormap-zoomout, .theme-white #user-profile .profile-details ul > li > span:hover {
+        color: #686868;
+    }
+
+#config-tool-cog {
+    opacity: 0.2;
+}
+
+@font-face {
+    font-family: 'TAHOMA';
+    src: url('../fonts/TAHOMA.TTF') format('truetype');
+}
+
+*, body, *.h1, *.h2, *.h3, *.h4, *.h5, *.h6, *.span, *.p, *.a, *.li, .page-header .page-header-menu .hor-menu .navbar-nav > li .dropdown-menu li > a,
+label, .panel-title, .panel-heading, .form-control {
+    font-family: Tahoma,sans-serif,serif;
+}
+
+.btn.blue:not(.btn-outline), .btn-info, .btn-default, .FilterCollapse, .btn-Edit, .btn.red:not(.btn-outline), .btn.green:not(.btn-outline), .btn.default:not(.btn-outline), .btn-primary {
+    color: unset;
+    background-color: unset;
+    border-color: rgb(173, 173, 173) !important;
+    border-radius: 0 !important;
+}
+
+    .btn.blue:not(.btn-outline):hover, .btn-info:hover, .btn.blue:not(.btn-outline):active, .btn.blue:not(.btn-outline):focus, .btn-info:active, .btn-info:focus, .FilterCollapse:focus, .FilterCollapse:hover, .FilterCollapse:active, .FilterCollapse i:active, .FilterCollapse i:focus, .btn.red:not(.btn-outline):hover, .btn.red:not(.btn-outline):focus, .btn.red:not(.btn-outline):active, .btn-default:hover, .btn-default:active, .btn-default:focus, .btn.green:not(.btn-outline):hover, .btn.green:not(.btn-outline):active, .btn.green:not(.btn-outline):focus, .btn.default:not(.btn-outline) :active, .btn.default:not(.btn-outline):hover, .btn.default:not(.btn-outline) :focus, .btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-Edit:hover, .btn-Edit:active, .btn-Edit:focus {
+        background-color: rgb(230, 230, 230) !important;
+        border-color: rgb(173, 173, 173) !important;
+        outline-color: rgb(51, 51, 51) !important;
+        color: rgb(51, 51, 51) !important;
+    }
+
+#content-header {
+    background: #ffffff;
+    border-bottom: unset;
+    margin-bottom: 10px;
+}
+
+    #content-header h1 {
+        text-align: center;
+        display: block;
+        color: black;
+        font-size: 16pt;
+    }

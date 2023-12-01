@@ -1,0 +1,422 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="HomeMaster.master.cs" Inherits="HomeMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="shortcut icon" type="image/png" href="/img/logo-small.png" />
+    <link rel="icon" type="image/png" href="/img/logo-small.png" />
+    <asp:PlaceHolder ID="plcssArabic" runat="server">
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="/css/libs/bootstrap-rtl.min.css" />
+        <link href="/css/MainRTL.css" rel="stylesheet" />
+    </asp:PlaceHolder>
+
+    <asp:PlaceHolder ID="plcssEnglish" runat="server">
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap/bootstrap.min.css" />
+    </asp:PlaceHolder>
+
+    <link rel="stylesheet" type="text/css" href="/css/libs/droidarabicnaskh.css" />
+    <link rel="stylesheet" type="text/css" href="/css/libs/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="/css/libs/nanoscroller.css" />
+    <link rel="stylesheet" type="text/css" href="/css/compiled/theme_styles.css" />
+    <link href="/css/AdminLTE.min.css" rel="stylesheet" />
+    <link href="/plugins/bootstrap-select/dist/css/bootstrap-select.css" rel="stylesheet" />
+    <link href="/plugins/bootstrap-sweetalert-master/dist/sweetalert.css" rel="stylesheet" type="text/css" />
+    <link href="/plugins/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/plugins/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="/css/Main.css" rel="stylesheet" type="text/css" />
+
+    <asp:ContentPlaceHolder ID="CSSContent" runat="server"></asp:ContentPlaceHolder>
+    <script src="/plugins/jquery.min.js"></script>
+    <script src="/plugins/moment-develop/moment.js"></script>
+    <asp:PlaceHolder ID="pljsArabic" runat="server">
+        <%--<script type="text/javascript" src="/js/jquery.js"></script>--%>
+        <script type="text/javascript" src="/js/bootstrap.js"></script>
+        <script type="text/javascript" src="/js/demo-rtl.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('body').addClass("rtl");
+            });
+        </script>
+    </asp:PlaceHolder>
+
+    <asp:PlaceHolder ID="pljsEnglish" runat="server">
+        <%--<script type="text/javascript" src="/js/jquery.js"></script>--%>
+        <script type="text/javascript" src="/js/bootstrap.js"></script>
+    </asp:PlaceHolder>
+    <script type="text/javascript" src="/js/demo.js"></script>
+
+    <script type="text/javascript" src="/js/jquery.nanoscroller.min.js"></script>
+
+    <script src="/js/Growl/jquery.bootstrap-growl.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/js/scripts.js"></script>
+    <script type="text/javascript" src="/js/pace.min.js"></script>
+    <script src="/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="/plugins/fastclick/lib/fastclick.js"></script>
+    <script src="/js/select2.js"></script>
+    <script src="/plugins/bootstrap-sweetalert-master/dist/sweetalert.min.js"></script>
+    <script src="/js/AlertSweet.js"></script>
+
+    <script src="/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="/plugins/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+
+    <script src="/plugins/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="/plugins/bootstrap-select/dist/js/bootstrap-select.js"></script>
+    <script src="/js/datetime-moment.js"></script>
+</head>
+<body class="them">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" AsyncPostBackTimeout="600" EnablePageMethods="true" runat="server"></asp:ScriptManager>
+        <asp:UpdateProgress DisplayAfter="0" ID="mainup" runat="server">
+            <ProgressTemplate>
+
+                <div style="background-color: Gray; filter: alpha(opacity=60); opacity: 0.60; width: 100%; top: 0px; left: 0px; position: fixed; height: 100%; z-index: 1000;">
+                </div>
+                <div style="margin: auto; font-family: Trebuchet MS; filter: alpha(opacity=100); opacity: 1; font-size: small; vertical-align: middle; top: 45%; position: fixed; right: 45%; color: #275721; text-align: center; height: 100px; z-index: 2000; border-radius: 10px;">
+                    <table style="font-family: Sans-Serif; text-align: center; color: #275721; width: inherit; height: inherit; padding: 15px; z-index: 2001">
+                        <tr>
+                            <td style="text-align: inherit;">
+                                <img src="/img/ajax-loading.gif" alt="Loading" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </ProgressTemplate>
+        </asp:UpdateProgress>
+        <div id="theme-wrapper">
+            <div class="navbar" id="header-navbar">
+                <div class="container">
+                    <a href="/Pages/Ben.aspx" id="logo" class="navbar-brand">
+                        <img src="/img/logo.png" alt="" class="normal-logo logo-white">
+                        <img src="/img/logo-black.png" alt="" class="normal-logo logo-black">
+                        <img src="/img/logo-small.png" alt="" class="small-logo hidden-xs hidden-sm hidden">
+                    </a>
+                    <div class="clearfix">
+                        <button class="navbar-toggle" data-target=".navbar-ex1-collapse" data-toggle="collapse"
+                            type="button">
+                            <span class="sr-only">Toggle navigation</span> <span class="fa fa-bars"></span>
+                        </button>
+                        <div class="nav-no-collapse navbar-left pull-left hidden-sm hidden-xs">
+                            <ul class="nav navbar-nav pull-left">
+                                <li><a class="btn" id="make-small-nav"><i class="fa fa-bars"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-no-collapse pull-right" id="header-nav">
+                            <ul class="nav navbar-nav pull-right">
+
+                                <li class="dropdown" id="Language_Module" runat="server"><a data-toggle="dropdown">
+                                    <asp:Literal ID="Literal1" runat="server" Text='<%# GetLocalResourceObject ("Language") %>'></asp:Literal>
+                                    <i class="fa fa-caret-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="item">
+                                            <% if (!GlobalFunction.isArabic())
+                                                { %>
+                                            <asp:LinkButton ID="btnLangAr" class="Lang" OnClick="btnLangAr_Click" Text='<%# GetLocalResourceObject("ArabicBtn") %>' runat="server"></asp:LinkButton>
+                                            <%}
+                                                else
+                                                {%>
+                                            <asp:LinkButton ID="btnLangEn" class="Lang" OnClick="btnLangEn_Click" Text='<%# GetLocalResourceObject("EnglishBtn") %>' runat="server"></asp:LinkButton>
+                                            <%} %>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="hidden-xxs">
+                                    <asp:LinkButton runat="server" class="btn" ID="LogOut" OnClick="LogOut_Click"><i class="fa fa-power-off"></i>
+                                    </asp:LinkButton></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="page-wrapper" class="container">
+                <div class="row">
+                    <div id="nav-col">
+                        <section id="col-left" class="col-left-nano">
+                            <div id="col-left-inner" class="col-left-nano-content">
+                                <div id="user-left-box" class="clearfix hidden-sm hidden-xs dropdown profile2-dropdown">
+                                    <asp:Image ID="user_img" runat="server" ImageUrl="/img/Employee/User_Pic.png"></asp:Image>
+                                    <div class="user-box" id="User_Setting" runat="server">
+                                        <span class="name">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                <asp:Label ID="lbl_namee" runat="server" Text="<%# GlobalFunction.GetUserName() %>"></asp:Label>
+                                                <i class="fa fa-angle-down"></i>
+                                            </a>
+
+                                            <ul class="dropdown-menu">
+                                                <%--                                                <li><a href="EmployeeProfile.aspx"><i class="fa fa-paperclip"></i><%= GetLocalResourceObject("Profile") %></a></li>--%>
+                                                <li>
+                                                    <asp:LinkButton runat="server" OnClick="LogOut_Click" Text="Logout"><i class="fa fa-power-off"></i>Logout </asp:LinkButton></li>
+                                                <li><a href="EditePassword.aspx"><i class="fa fa-cog"></i>Change Password </a></li>
+                                            </ul>
+                                        </span>
+                                        <span class="status">
+                                            <i class="fa fa-circle"></i><%= GetLocalResourceObject("Online") %>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="collapse navbar-collapse navbar-ex1-collapse" id="sidebar-nav">
+                                    <ul class='submenu'>
+                                        <%-- <li runat="server" id="Li1" aria-haspopup="true" class=" ">
+                                            <a href="../Pages/add_users.aspx">إضافه مستخدم</a>
+                                        </li>--%>
+                                        <li runat="server" id="Li2" aria-haspopup="true" class=" ">
+                                            <a href="../Pages/ediet_users.aspx">تعديل بيانات مستخدم</a>
+                                        </li>
+                                        <li>
+                                            <a href="../Pages/Ben_fe2a.aspx">فئات المستفيدين</a>
+                                        </li>
+                                        <li>
+                                            <a href="../Pages/Ben_typs.aspx">انواع المستفيدين</a>
+                                        </li>
+                                        <li>
+                                            <a href="../Pages/Ben.aspx">المستفيدين</a>
+                                        </li>
+                                        <li>
+                                            <a href="../Pages/AID.aspx">صرف المساعدات</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="../Pages/AidTypes.aspx">انواع المساعدات</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="../Pages/AccountType.aspx">انواع الحسابات</a>
+                                        </li>
+                                        <li>
+                                            <a href="../Pages/Report_Ben.aspx">تقرير المستفيدين</a>
+                                        </li>
+                                        <li>
+                                            <a href="../Pages/ReportAid2.aspx">تقرير المساعدات</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="../Pages/ReportAid_Kshf.aspx">كشف حساب</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="../Pages/task1.aspx">Task1 Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="../Pages/UploadExcel.aspx">Task2 Excel</a>
+                                        </li>
+                                        <li>
+                                            <a href="../Pages/task2.aspx">Task3 CVS</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <div id="nav-col-submenu">
+                        </div>
+                    </div>
+                    <div id="content-wrapper">
+                        <div class="row" style="opacity: 1;">
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div id="content-header" class="clearfix">
+                                            <div class="">
+                                                <%--   <ol class="breadcrumb">
+                                                <li><a href="Default.aspx">
+                                                    Home</a></li>
+                                                <span style="font-weight: bold; font-size: smaller">> </span>
+                                                <asp:Label ID="lbl_page" runat="server" Text="Dashboard">  </asp:Label>
+                                            </ol>--%>
+                                                <h1>
+                                                    <asp:ContentPlaceHolder ID="BodyTitleContent" runat="server">
+                                                    </asp:ContentPlaceHolder>
+                                                </h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <asp:ContentPlaceHolder ID="BodyContent" runat="server"></asp:ContentPlaceHolder>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer id="footer-bar" class="row" style="opacity: 1;">
+                            <p id="footer-copyright" class="col-xs-12">
+                                © <%= DateTime.Now.Year %>-Business Matters. All rights reserved.
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="config-tool" class="closed">
+            <a id="config-tool-cog"><i class="fa fa-cog"></i></a>
+            <div id="config-tool-options">
+                <h4>Layout Options</h4>
+                <ul>
+                    <li>
+                        <div class="checkbox-nice">
+                            <input type="checkbox" id="config-fixed-header" />
+                            <label for="config-fixed-header">
+                                Fixed Header
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="checkbox-nice">
+                            <input type="checkbox" id="config-fixed-sidebar" />
+                            <label for="config-fixed-sidebar">
+                                Fixed Left Menu
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="checkbox-nice">
+                            <input type="checkbox" id="config-fixed-footer" />
+                            <label for="config-fixed-footer">
+                                Fixed Footer
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="checkbox-nice">
+                            <input type="checkbox" id="config-boxed-layout" />
+                            <label for="config-boxed-layout">
+                                Boxed Layout
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+                <br />
+                <h4>Skin Color</h4>
+                <ul id="skin-colors" class="clearfix">
+                    <li><a class="skin-changer" data-skin="" data-toggle="tooltip" title="Default" style="background-color: #34495e;"></a></li>
+                    <li><a class="skin-changer" data-skin="theme-white" data-toggle="tooltip" title="White/Green"
+                        style="background-color: #2ecc71;"></a></li>
+                    <li><a class="skin-changer blue-gradient" data-skin="theme-blue-gradient" data-toggle="tooltip"
+                        title="Gradient"></a></li>
+                    <li><a class="skin-changer" data-skin="theme-turquoise" data-toggle="tooltip" title="Green Sea"
+                        style="background-color: #1abc9c;"></a></li>
+                    <li><a class="skin-changer" data-skin="theme-amethyst" data-toggle="tooltip" title="Amethyst"
+                        style="background-color: #9b59b6;"></a></li>
+                    <li><a class="skin-changer" data-skin="theme-blue" data-toggle="tooltip" title="Blue"
+                        style="background-color: #2980b9;"></a></li>
+                    <li><a class="skin-changer" data-skin="theme-red" data-toggle="tooltip" title="Red"
+                        style="background-color: #e74c3c;"></a></li>
+                    <li><a class="skin-changer" data-skin="theme-whbl" data-toggle="tooltip" title="White/Blue"
+                        style="background-color: #3498db;"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="/js/Main.js"></script>
+        <script>
+            function LoadSelect() {
+                $('.selectpicker').selectpicker({
+                    style: 'btn-success',
+                    size: 8,
+                    liveSearch: true,
+                    noneSelectedText: ""
+                });
+                $('.selectpickerdefault').selectpicker({
+                    style: 'bg-gray',
+                    size: 8,
+                    liveSearch: true,
+                    noneSelectedText: ""
+                });
+                $('.selectpickerdefaultNoSearch').selectpicker({
+                    style: 'bg-gray',
+                    size: 8,
+                    noneSelectedText: ""
+                });
+            }
+            $(document).ready(function () {
+                LoadSelect();
+            });
+            Sys.WebForms.PageRequestManager.getInstance().add_pageLoaded(function () {
+                LoadSelect();
+            });
+        </script>
+
+        <script>
+            function LoadJsScriptGrid1() {
+
+                table = $('.dataTable').DataTable({
+
+                    retrieve: true,
+
+                    'paging': true,
+                    'lengthChange': true,
+                    'searching': true,
+                    'ordering': true,
+                    'info': true,
+
+                    "aLengthMenu": [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]],
+                    'autoWidth': false,
+                    "bStateSave": true,
+            <% if (GlobalFunction.isArabic())
+            { %>
+                    "language":
+                    {
+                        "sProcessing": "جارٍ التحميل...",
+                        "sLengthMenu": "أظهر _MENU_ مدخلات",
+                        "sZeroRecords": "لم يعثر على أية سجلات",
+                        "sInfo": "إظهار _START_ إلى _END_ من أصل _TOTAL_ مدخل",
+                        "sInfoEmpty": "يعرض 0 إلى 0 من أصل 0 سجل",
+                        "sInfoFiltered": "(منتقاة من مجموع _MAX_ مُدخل)",
+                        "sInfoPostFix": "",
+                        "sSearch": "ابحث:",
+                        "sUrl": "",
+                        "oPaginate": {
+                            "sFirst": "الأول",
+                            "sPrevious": "السابق",
+                            "sNext": "التالي",
+                            "sLast": "الأخير"
+                        }
+                    }
+                    <%  }%>
+                });
+            }
+            Sys.WebForms.PageRequestManager.getInstance().add_pageLoaded(function () {
+                $.fn.dataTable.moment('DD/MM/YYYY');
+                LoadJsScriptGrid1();
+            });
+        </script>
+        <script>
+            $(document).ready(function () {
+                $.fn.dataTable.moment('DD/MM/YYYY');
+                LoadJsScriptGrid1();
+            });
+        </script>
+        <asp:ContentPlaceHolder ID="JSContent" runat="server"></asp:ContentPlaceHolder>
+        <script src="/js/demo-skin-changer.js"></script>
+    </form>
+</body>
+</html>
+
+<%--<div class="row">
+    <div class="col-md-12">
+        <div class="box">
+            <div class="box-header">
+                <h3 class="box-title">
+
+                    <br />
+                    <span>
+                    </span>
+                </h3>
+            </div>
+            <div class="box-body">
+                <div class="row">
+                    <div class="col-md-12">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>--%>
